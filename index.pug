@@ -1,0 +1,15 @@
+extends ./src/_extends/common
+
+block title 
+  title Form Registration 
+
+block styles 
+  link(rel="stylesheet" href="./index.css")
+block main 
+  .app
+    .content
+      +form
+      +modal-window 
+
+block scripts 
+  script(defer type="module" src="./js/index.js") 

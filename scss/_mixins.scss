@@ -1,0 +1,28 @@
+// .container
+@mixin maxCentered($widthPx, $paddPX) {
+  max-width: pagePadding($widthPx, $paddPX) + px;
+  padding: 0 $paddPX + px;
+  margin: 0 auto;
+  width: 100%;
+}
+// Width container + padding
+@function pagePadding($widthPX, $paddPx) {
+  @return $widthPX + $paddPx + $paddPx;
+}
+// Px to em
+@function em($px) {
+  @return $px / $fs-base + em;
+}
+// Top fixed
+@mixin fixedTop() {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+// Flex line
+@mixin flexLine {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}

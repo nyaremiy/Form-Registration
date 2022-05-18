@@ -1,0 +1,21 @@
+.e-link {
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  &::before {
+    content: '';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: $c-charleston-green;
+    transition: all 0.2s linear;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+  }
+}

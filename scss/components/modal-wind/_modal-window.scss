@@ -1,0 +1,25 @@
+.c-modal-window {
+  font-family: 'Karla', sans-serif;
+  transform: translateX(-50%);
+  border: 1px solid $c-white;
+  transition: all 0.7s ease;
+  text-transform: uppercase;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  padding: 10px 30px;
+  width: fit-content;
+  display: block;
+  color: $c-white;
+  font-weight: 700;
+  top: -100%;
+  left: 50%;
+  &--success {
+    background-color: $c-green;
+    top: 35px;
+  }
+  &--error {
+    background-color: $c-red;
+    top: 35px;
+  }
+}

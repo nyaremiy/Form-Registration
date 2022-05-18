@@ -1,0 +1,24 @@
+mixin form
+  form.c-form(method='post' id='js-form')
+    .c-form__wrapper 
+      h3.c-form__title Create An Account
+      .c-form__desc Create an account to enjoy all the services without any ads for free!
+      label.c-form__label
+        +input({placeholder : 'Username', name : 'userName'})
+        .c-form__error#js-error-username
+      label.c-form__label
+        +input({placeholder : 'Firstname', name : 'firstName'})
+        .c-form__error#js-error-firstname
+      label.c-form__label
+        +input({placeholder : 'Lastname', name : 'lastName'})
+        .c-form__error#js-error-lastname
+      label.c-form__label
+        +input({type : 'email',placeholder : 'Email', name : 'email'})
+        .c-form__error#js-error-email
+      label.c-form__label
+        +input({type : 'password',placeholder : 'Password', name : 'password'})
+        .c-form__error#js-error-password
+      .c-form__button 
+        +button({type : 'submit', text : 'Create Account', id : 'js-button'})
+      .c-form__desc Already Have An Account? 
+        +link({text : 'Sign In'})

@@ -1,0 +1,18 @@
+.e-button {
+  transition: transform 200ms, box-shadow 200ms;
+  box-shadow: $c-ateneo-blue 4px 4px 0;
+  background-color: $c-eton-blue;
+  width: fit-content;
+  border-radius: 25px;
+  border-style: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 34px;
+  padding: 0 70px;
+  color: $c-white;
+  height: 90px;
+  &:active {
+    box-shadow: $c-ateneo-blue 0 0 0;
+    transform: translate(4px, 4px);
+  }
+}
